@@ -702,9 +702,25 @@ ArbOne | Less
 	}
 
 	/* Konto */
+	.content-main--inner{
+		.unitize-padding(0,20);
+	}
 
-	.register--content{
-		border-radius: 0;
+	.register--login{
+		.register--login-btn{
+			.unitize-width(160);
+			text-align: center;
+		}
+	}
+
+.register--content{
+	.register--action{
+		.register--submit{
+			width: 45%;
+		}
+	}
+}
+
 		.register--form{
 			.register--personal{
 				.panel--title{
@@ -715,7 +731,14 @@ ArbOne | Less
 				}
 			}
 		}
-	}
+		.select-field:after{
+			content:'\e919';
+			font-family: 'betten-abc';
+			.unitize(font-size, 8);
+			color:@sidebar-border-bottom;
+		}
+
+		//Digital publishing
 
 	.dig-pub--button{
           .btn{
@@ -730,7 +753,7 @@ ArbOne | Less
             border: 1px solid @body-bg;
           }
         }
-	
+
 	.emotion--banner-slider{
           .image-slider--dots{
             .dot--link{
@@ -761,7 +784,7 @@ ArbOne | Less
 	.emotion--wrapper:nth-child(8){
 	 padding-top: 0;
 	}
-	
+
 	.custom--blocks, .custom--blocks.full--width{
 	 .unitize-margin(0,20);
 	}
