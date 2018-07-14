@@ -72,7 +72,7 @@ ArbOne | Less
 				}
 				.navigation--link{
 					.unitize(font-size, 18);
-					.unitize-padding(10,18,9,18)
+					.unitize-padding(10,23,9,23)
 				}
 				.navigation--list{
 					padding: 0;
@@ -118,7 +118,7 @@ ArbOne | Less
 
 			.betten-abc-icon_pfeil_unten_klein{
 				.unitize(font-size, 9);
-				.unitize(margin-left, 5);
+				.unitize(margin-left, 8);
 			}
 
 			.footer--payments{
@@ -259,16 +259,6 @@ ArbOne | Less
 		}
 
 			.emotion--product-slider{
-				.product-slider--title{
-					.unitize(font-size,22);
-					.unitize(line-height, 25);
-					color: @brand-primary;
-					border-bottom: none;
-					text-align: center;
-					.unitize(margin-top, 23);
-					font-weight: normal;
-				}
-
 					.product--details{
 						width: 65%;
 						margin: 0 auto;
@@ -509,20 +499,12 @@ ArbOne | Less
 					}
 				}
 			}
-
-			.content-main.is--fullscreen{
-				 .content-main--inner{
-					 .unitize-padding(0,20,50,20);
-				 }
-		 }
-
 			.custom--blocks{
 				.custom--block-content{
 					.unitize-width(354);
 					float: left;
 					.unitize-height(260);
 					.unitize-padding(20);
-					.unitize(margin-left, 10);
 					.custom--block-entry{
 						.unitize-padding(20);
 					}
@@ -720,25 +702,9 @@ ArbOne | Less
 	}
 
 	/* Konto */
-	.content-main--inner{
-		.unitize-padding(0,20);
-	}
 
-	.register--login{
-		.register--login-btn{
-			.unitize-width(160);
-			text-align: center;
-		}
-	}
-
-.register--content{
-	.register--action{
-		.register--submit{
-			width: 45%;
-		}
-	}
-}
-
+	.register--content{
+		border-radius: 0;
 		.register--form{
 			.register--personal{
 				.panel--title{
@@ -749,12 +715,72 @@ ArbOne | Less
 				}
 			}
 		}
-		.select-field:after{
-			content:'\e919';
-			font-family: 'betten-abc';
-			.unitize(font-size, 8);
-			color:@sidebar-border-bottom;
-		}
+	}
+
+	.dig-pub--button{
+          .btn{
+            background: none;
+            border-radius: 0;
+          }
+          .is--primary{
+            border:1px solid @brand-primary;
+            color: @brand-primary;
+          }
+          .is--secondary{
+            border: 1px solid @body-bg;
+          }
+        }
+	
+	.emotion--banner-slider{
+          .image-slider--dots{
+            .dot--link{
+              background: transparent;
+              border:1px solid @body-bg;
+              .unitize-width(14);
+              .unitize-height(14);
+            }
+            .dot--link.is--active{
+              background: @body-bg;
+            }
+          }
+	    .banner-slider--container{
+            .arrow.is--left{
+              .unitize(left, 10);
+            }
+            .arrow.is--right{
+              .unitize(right, 10);
+            }
+          }
+
+        }
+
+	.emotion--wrapper{
+	 .unitize-padding(30,20,0,20);
+	}
+
+	.emotion--wrapper:nth-child(8){
+	 padding-top: 0;
+	}
+	
+	.custom--blocks, .custom--blocks.full--width{
+	 .unitize-margin(0,20);
+	}
+
+  .dig-pub--button{
+  .btn:after{
+    font-family: 'betten-abc';
+    content: "\e913";
+    color: @brand-primary;
+    .unitize(font-size, 16);
+    float:right;
+  }
+  .is--secondary:after{
+   color:@body-bg;
+  }
+}
+
+
+
 
 
 
