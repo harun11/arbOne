@@ -339,6 +339,12 @@ ArbOne | Less
 		}
 	}
 
+	.select-field:after{
+		border: 0;
+		content: '\e919';
+		font-family: 'betten-abc';
+	}
+
 	.is--ctl-listing{
 		.listing--content{
 			.listing{
@@ -658,9 +664,6 @@ ArbOne | Less
 			.unitize-width(105);
 		}
 		.product--actions{
-
-			.unitize-margin(10, 0, 10, 0);
-
 			.social--media{
 				display: inline-block;
 				a{
@@ -680,12 +683,6 @@ ArbOne | Less
 	}
 
 	.product--delivery{
-
-		p { .unitize-margin(5, 0, 0, 0);
-
-			}
-
-
 		.delivery--text-available{
 			color: #54925F;
 			.unitize(font-size, 12);
@@ -959,7 +956,6 @@ ArbOne | Less
 		.entry--label{
 			font-weight: normal;
 			.unitize(line-height, 17);
-			 width: 17% !important;
 		}
 
 	.product--configurator{
@@ -1338,6 +1334,26 @@ ArbOne | Less
 		}
 		/*	Konto	 */
 
+		.account--menu{
+			border: 1px solid @sidebar-border-bottom;
+			border-radius: 0;
+			.navigation--signin-btn{
+				background: @brand-primary;
+				background-image: none;
+				border-radius: 0;
+			}
+		}
+
+		.register--personal{
+			.panel--title{
+				color: @brand-primary;
+				font-weight: normal;
+				.unitize(line-height, 19);
+				border-color: @sidebar-border-bottom;
+			}
+		}
+
+
 	.register--login{
 		.register--new-customer{
 			border: 1px solid @brand-secundary;
@@ -1360,6 +1376,7 @@ ArbOne | Less
 				.unitize(line-height, 19);
 				border-color:@sidebar-border-bottom;
 				font-weight: normal;
+				border-bottom: 1px solid @sidebar-border-bottom;
 			}
 			form{
 				.register--login-description{
@@ -1385,104 +1402,189 @@ ArbOne | Less
 					.register--login-btn{
 						background-image: none;
 						background-color: @brand-primary;
+						border-radius: 0;
+						.unitize-padding(2, 6.5, 2, 6.5);
+						.betten-abc-icon_pfeil_slider_rechts{
+							float: right;
+    					.unitize(font-size, 16);
+    					.unitize(margin-top, 10);
+						}
+						.betten-abc-icon_pfeil_slider_rechts:before{
+							color: @body-bg;
+						}
 					}
 				}
 			}
 		}
   }
 
+	.select-field{
+		select{
+			border: 1px solid @sidebar-border-bottom;
+		}
+	}
 
- /*	Digital Publishing */
+	.register--personal{
+		input{
+			border: 1px solid @sidebar-border-bottom;
+		}
+		::placeholder{
+			color: @top-bar-color;
+		}
+	}
 
- 		.dig-pub--text {
+	.register--address{
+		.panel--title{
+			color: @brand-primary;
+			.unitize(line-height, 19);
+			font-weight: normal;
+			border-bottom: 1px solid @sidebar-border-bottom;
+		}
+		input{
+			border: 1px solid @sidebar-border-bottom;
+		}
+		::placeholder{
+			color:@top-bar-color;
+		}
+	}
 
- 		h1, h2, h3, h4, h5, h6 {
-        font-weight:300
+.register--content{
+	border: 1px solid @sidebar-border-bottom !important;
+	border-radius: 0;
+	.register--action{
+		.register--submit{
+			background: @brand-primary;
+			background-image: none;
+			border-radius: 0;
+			.unitize(font-size, 16);
+			.unitize(line-height, 23);
+			width: 65%;
+			.unitize-padding(2,6,2,6);
+			.betten-abc-icon_pfeil_slider_rechts{
+				.unitize(font-size, 16);
+				.unitize(margin-top, 3);
+				float: right;
+			}
+			.betten-abc-icon_pfeil_slider_rechts:before{
+				color:@body-bg;
+			}
+		}
+	}
+}
+.account--content{
+	.account--box{
+		border: 1px solid @sidebar-border-bottom;
+		border-radius:0;
+		.panel--title{
+			.unitize(font-size, 16);
+			color: @brand-primary;
+			border-bottom: 1px solid @sidebar-border-bottom;
+			font-weight: normal;
 
 		}
-
-		h1, h2, h3, h4, h5, h6, p, blockquote {
-        font-family: Roboto !important;
-
+		.btn{
+			border: 1px solid @sidebar-border-bottom;
+			border-radius: 0;
 		}
+	}
 }
 
-	.panel.has--border{
-          border:0;
-          .panel--title.is--underline{
-            border: 0;
-            color: @brand-primary;
-            text-align: center;
-            .unitize(font-size, 22);
-            .unitize(line-height, 25);
-            font-weight: normal;
-            .unitize-padding(10,0,20,0);
-          }
-          p{
-            .unitize(line-height, 21);
-            strong{
-              .unitize(font-size, 18);
-              font-weight: normal;
-              color: @brand-primary;
-            }
-          }
-        }
-
-	.emotion--banner-slider{
-          .banner-slider--container{
-            .arrow{
-              font-family: 'betten-abc'!important;
-              font-size: 40px;
-              border: 0;
-              background: none;
-              color: @body-bg;
-            }
-            .arrow.is--left::before{
-              content: "\e90e";
-            }
-            .arrow.is--right::before{
-              content: "\e914";
-            }
-          }
-        }
-
-	.verkaufslider{
-	  .dig-pub--layer:last-child{
- 	  .layer--content{
-	    border:1px solid @brand-primary;
-	  }
-	 }
+.sidebar--navigation {
+	.navigation--entry{
+		border-bottom: 1px solid @sidebar-border-bottom;
 	}
-
-	.emotion--wrapper{
-	 .unitize-padding(20,10,0,10);
-	}
-
-	.emotion--wrapper.is--fullscreen{
-	 padding:0;
-	}
-
-	.emotion--wrapper:nth-child(9){
-	 padding-top: 0;
-	}
-
-	.custom--blocks.full--width{
-	 .unitize-margin(0,10);
-	}
-
-	.emotion--product-slider{
-				.product-slider--title{
-					.unitize(font-size,22);
-					.unitize(line-height, 25);
-					color: @brand-primary;
-					border-bottom: none;
-					text-align: center;
-					.unitize(margin-top, 23);
-					font-weight: normal;
-				}
 }
-	.emotion--html{
-	  .panel--body.is--wide{
-	   padding:0;
-	  }
+
+
+
+/* Kassenseite */
+.btn--back-top-shop{
+	border:1px solid @brand-secondary;
+	.unitize(font-size, 16);
+	border-radius: 0;
+	.unitize(line-height, 23);
+	.unitize(padding-top, 9.5);
+	.unitize(padding-bottom, 8.5);
+}
+
+.steps--content{
+	.steps--entry{
+		.icon{
+			background: @sidebar-border-bottom;
+		}
 	}
+}
+
+.steps--content{
+	.is--active{
+		.icon{
+			background: @brand-primary;
+			background-image: none;
+		}
+		.text{
+			margin-left: 0;
+		}
+		.text--inner{
+			.unitize(font-size, 18);
+			.unitize(line-height, 21);
+			font-weight: normal;
+		}
+	}
+}
+
+.confirm--content{
+	.tos--panel{
+		border: 1px solid @sidebar-border-bottom;
+		border-radius: 0;
+		.panel--title{
+			.unitize(font-size, 16);
+			.unitize(line-height, 19);
+			font-weight: normal;
+			color: @brand-primary;
+			border-bottom: 1px solid @sidebar-border-bottom;
+		}
+		.body--revocation{
+			font-weight: normal;
+		}
+	}
+	.information--panel{
+		border: 1px solid @sidebar-border-bottom;
+		border-radius: 0 !important;
+		.panel--title{
+			.unitize(font-size, 16);
+			.unitize(line-height, 19);
+			font-weight: normal;
+			color: @brand-primary;
+			border-bottom: 1px solid @sidebar-border-bottom;
+		}
+		.btn{
+			border: 1px solid @brand-secondary;
+			border-radius: 0;
+			.unitize(font-size, 16);
+			.unitize(line-height, 23);
+			.unitize(padding-top, 9.5);
+			.unitize(padding-bottom, 8.5);
+		}
+		.payment--title, .shipping--title{
+			font-weight: normal;
+		}
+	}
+	.table--actions{
+		.btn{
+			background-image: none;
+			background: @brand-primary;
+			.unitize-padding(2,5,2,5);
+			text-align: center;
+			.unitize(font-size, 16);
+			.unitize(line-height, 23);
+			.betten-abc-icon_pfeil_slider_rechts{
+				float: right;
+    		.unitize(font-size, 16);
+    		.unitize(margin-top, 3);
+			}
+			.betten-abc-icon_pfeil_slider_rechts:before{
+				color:@body-bg;
+			}
+		}
+	}
+}
