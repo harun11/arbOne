@@ -658,6 +658,9 @@ ArbOne | Less
 			.unitize-width(105);
 		}
 		.product--actions{
+
+			.unitize-margin(10, 0, 10, 0);
+
 			.social--media{
 				display: inline-block;
 				a{
@@ -677,6 +680,12 @@ ArbOne | Less
 	}
 
 	.product--delivery{
+
+		p { .unitize-margin(5, 0, 0, 0);
+
+			}
+
+
 		.delivery--text-available{
 			color: #54925F;
 			.unitize(font-size, 12);
@@ -950,6 +959,7 @@ ArbOne | Less
 		.entry--label{
 			font-weight: normal;
 			.unitize(line-height, 17);
+			 width: 17% !important;
 		}
 
 	.product--configurator{
@@ -1380,3 +1390,99 @@ ArbOne | Less
 			}
 		}
   }
+
+
+ /*	Digital Publishing */
+
+ 		.dig-pub--text {
+
+ 		h1, h2, h3, h4, h5, h6 {
+        font-weight:300
+
+		}
+
+		h1, h2, h3, h4, h5, h6, p, blockquote {
+        font-family: Roboto !important;
+
+		}
+}
+
+	.panel.has--border{
+          border:0;
+          .panel--title.is--underline{
+            border: 0;
+            color: @brand-primary;
+            text-align: center;
+            .unitize(font-size, 22);
+            .unitize(line-height, 25);
+            font-weight: normal;
+            .unitize-padding(10,0,20,0);
+          }
+          p{
+            .unitize(line-height, 21);
+            strong{
+              .unitize(font-size, 18);
+              font-weight: normal;
+              color: @brand-primary;
+            }
+          }
+        }
+
+	.emotion--banner-slider{
+          .banner-slider--container{
+            .arrow{
+              font-family: 'betten-abc'!important;
+              font-size: 40px;
+              border: 0;
+              background: none;
+              color: @body-bg;
+            }
+            .arrow.is--left::before{
+              content: "\e90e";
+            }
+            .arrow.is--right::before{
+              content: "\e914";
+            }
+          }
+        }
+
+	.verkaufslider{
+	  .dig-pub--layer:last-child{
+ 	  .layer--content{
+	    border:1px solid @brand-primary;
+	  }
+	 }
+	}
+
+	.emotion--wrapper{
+	 .unitize-padding(20,10,0,10);
+	}
+
+	.emotion--wrapper.is--fullscreen{
+	 padding:0;
+	}
+
+	.emotion--wrapper:nth-child(9){
+	 padding-top: 0;
+	}
+
+	.custom--blocks.full--width{
+	 .unitize-margin(0,10);
+	}
+
+	.emotion--product-slider{
+				.product-slider--title{
+					.unitize(font-size,22);
+					.unitize(line-height, 25);
+					color: @brand-primary;
+					border-bottom: none;
+					text-align: center;
+					.unitize(margin-top, 23);
+					font-weight: normal;
+				}
+}
+	.emotion--html{
+	  .panel--body.is--wide{
+	   padding:0;
+	  }
+	}
